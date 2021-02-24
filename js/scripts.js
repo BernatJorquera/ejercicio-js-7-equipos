@@ -1,4 +1,4 @@
-const consola = document.querySelector(".consola");
+
 const pre = document.createElement("pre");
 for (let boton of document.querySelectorAll("button")) {
   boton.addEventListener("click", e => {

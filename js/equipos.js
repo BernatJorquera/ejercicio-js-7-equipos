@@ -71,7 +71,6 @@ const equipos = [
       },
       direccion: "C/ Besalú, 7",
       poblacion: "Barcelona",
-      provincia: "Barcelona",
     },
   },
 ];
