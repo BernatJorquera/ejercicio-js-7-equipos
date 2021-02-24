@@ -6,4 +6,14 @@ body {
   margin: 0;
 }
 
+main {
+  background-color: #90a081;
+}
 
+aside {
+  background-color: #f1ac7b;
+}
+
+span {
+  background-color: #ffc107;
+}
