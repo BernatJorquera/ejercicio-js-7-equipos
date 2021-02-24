@@ -20,3 +20,10 @@ const equiposPorEdad = equipos => {
   }
   return equiposOrdenados.reverse();
 }
+
+const equiposTipo = (equipos, tipo) => equipos.filter(elemento => elemento.tipo === tipo);
+
+const trabajadoresTipo = (equipos, tipo) => equipos
+  .filter(elemento => elemento.tipo === tipo)
+  .map(elemento => elemento.asignado.empleado);
+
