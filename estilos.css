@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  background-color: #90a081;
+}
+
+aside {
+  background-color: #f1ac7b;
+}
+
+.boton {
+  background-color: #ffc107;
+  height: max-content;
+}
+
+li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.consola {
+  background-color: #1e1e1e;
+  color: #16bc6a;
+  font-family: monospace;
+  height: 600px;
+  overflow: auto;
+}
