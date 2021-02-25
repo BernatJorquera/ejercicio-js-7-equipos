@@ -1,3 +1,4 @@
+
 const equipos = [
   {
     id: "A7921",
@@ -75,3 +76,7 @@ const equipos = [
     },
   },
 ];
+
+
+
+

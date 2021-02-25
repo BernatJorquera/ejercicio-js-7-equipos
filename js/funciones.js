@@ -6,6 +6,15 @@ const equiposProvincia = (equipos, provincia) => {
   return equipos.filter(elemento => elemento.asignado.provincia.toLowerCase() === provincia.toLowerCase());
 }
 
+function provincias(equipos) {
+  const provinciasArray = [];
+  for (let i in equipos) {
+    if (!provinciasArray.includes(equipos[i].asignado.provincia)) {
+      provinciasArray.push(equipos[i].asignado.provincia)
+    }
+  }
+  return provinciasArray;
+}
 const edadMedia = equipos => {
   return equipos.reduce((acc, elemento) => acc + elemento.asignado.empleado.edad, 0) / equipos.length;
 }
