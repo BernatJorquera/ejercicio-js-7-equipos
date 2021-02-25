@@ -29,5 +29,6 @@ li {
   background-color: #1e1e1e;
   color: #16bc6a;
   font-family: monospace;
-  height: 100%;
+  height: 600px;
+  overflow: auto;
 }
