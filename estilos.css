@@ -13,6 +13,7 @@ main {
 
 aside {
   background-color: #f1ac7b;
+  height: 100vh;
 }
 
 .boton {
@@ -29,6 +30,6 @@ li {
   background-color: #1e1e1e;
   color: #16bc6a;
   font-family: monospace;
-  height: 600px;
+  height: 100%;
   overflow: auto;
 }
