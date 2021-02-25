@@ -29,11 +29,5 @@ li {
   background-color: #1e1e1e;
   color: #16bc6a;
   font-family: monospace;
-  width: 100%;
-  height: 100%
-}
-
-div {
-  padding: 90px 15px;
   height: 100%;
 }
