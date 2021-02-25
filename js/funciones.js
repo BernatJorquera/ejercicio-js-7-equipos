@@ -42,3 +42,23 @@ const equiposTipoLocalidad = (elementos, tipo, localidad) =>
       && (elemento.asignado.poblacion === localidad
         || elemento.asignado.provincia === localidad));
 
+
+class Resumen {
+  id;
+  poblacion;
+  provincia;
+
+  constructor(num, localidad1, localidad2) {
+    this.id = num;
+    this.poblacion = localidad1;
+    this.provincia = localidad2;
+  }
+}
+
+function resumenEquipos(elementos) {
+  let resumenFinal = [];
+  for (let i in elementos) {
+    resumenFinal[i] = new Resumen(elementos[i].id, elementos[i].asignado.poblacion, elementos[i].asignado.provincia);
+  }
+  return resumenFinal;
+}
