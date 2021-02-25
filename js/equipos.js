@@ -1,7 +1,3 @@
-/* Una función provincias que reciba un array de equipos y devuelva un array de provincias donde haya equipos.
-Una función puestos que reciba un array de equipos y devuelva un array de puestos de trabajadores con equipo asignado.*/
-
-
 
 const equipos = [
   {

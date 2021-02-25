@@ -8,28 +8,6 @@ const equiposProvincia = (equipos, provincia) => {
 
 
 
-const provincias
-
-
-
-
-
-/*let equipos2 = [...equipos]
-
-function provincias1(equipos, provincia) {
-  if (provincia = "Barcelona") {
-    provincias1 = "Equipos Barcelona"
-  } else {
-    provincias1 = "Equipos Tarragona"
-  }
-}
-provincias1();
-const provincias = equipos2.map((paciente) => paciente.provincia.provincias1);
-return provincias {
-}; */
-
-
-
 function provincias(equipos) {
   const provinciasArray = [];
   for (let i in equipos) {
@@ -39,4 +17,4 @@ function provincias(equipos) {
   }
   return provinciasArray;
 }
-console.log(provincias(equipos));
+
