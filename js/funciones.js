@@ -36,3 +36,9 @@ const trabajadoresTipo = (elementos, tipo) => elementos
   .filter(elemento => elemento.tipo === tipo)
   .map(elemento => elemento.asignado.empleado);
 
+const equiposTipoLocalidad = (elementos, tipo, localidad) =>
+  elementos.filter(
+    elemento => (elemento.tipo === tipo)
+      && (elemento.asignado.poblacion === localidad
+        || elemento.asignado.provincia === localidad));
+
