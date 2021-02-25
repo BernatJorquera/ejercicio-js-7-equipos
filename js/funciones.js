@@ -43,7 +43,7 @@ const equiposTipoLocalidad = (elementos, tipo, localidad) =>
         || elemento.asignado.provincia === localidad));
 
 
-class Resumen {
+class EquiposResumen {
   id;
   poblacion;
   provincia;
@@ -58,7 +58,7 @@ class Resumen {
 function resumenEquipos(elementos) {
   let resumenFinal = [];
   for (let i in elementos) {
-    resumenFinal[i] = new Resumen(elementos[i].id, elementos[i].asignado.poblacion, elementos[i].asignado.provincia);
+    resumenFinal[i] = new EquiposResumen(elementos[i].id, elementos[i].asignado.poblacion, elementos[i].asignado.provincia);
   }
   return resumenFinal;
 }
