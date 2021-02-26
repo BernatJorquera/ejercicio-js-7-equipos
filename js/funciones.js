@@ -36,6 +36,24 @@ const trabajadoresTipo = (elementos, tipo) => elementos
   .filter(elemento => elemento.tipo === tipo)
   .map(elemento => elemento.asignado.empleado);
 
+const equiposPorTipo = equipos => {
+  return equipos.reduce((equiposPorTipo, equipo, i) => {
+    if (i === 0) {
+      equiposPorTipo =
+        [equipo.tipo,
+        { tipo: equipo.tipo, equipos: [equipo] }];
+    } else {
+      !equiposPorTipo.includes(equipo.tipo) ?
+        equiposPorTipo.push(
+          equipo.tipo,
+          { tipo: equipo.tipo, equipos: [equipo] }) :
+        equiposPorTipo[equiposPorTipo.indexOf(equipo.tipo) + 1]
+          .equipos.push(equipo)
+    }
+    return equiposPorTipo;
+  }, []).filter(elemento => !(typeof elemento === "string"))
+}
+
 const equiposTipoLocalidad = (elementos, tipo, localidad) =>
   elementos.filter(
     elemento => (elemento.tipo === tipo)
